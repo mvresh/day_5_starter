@@ -14,6 +14,7 @@ class XyloPhone extends StatelessWidget {
       Expanded expandedButton = Expanded (child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: FlatButton(
+            child: Text(''),
             color: c,
             onPressed: (){
               AudioCache player = AudioCache();
@@ -29,6 +30,7 @@ class XyloPhone extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
